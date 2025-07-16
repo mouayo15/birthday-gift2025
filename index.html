@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Love, On Your Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6e6, #ffe0f0);
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 5% auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 100, 150, 0.3);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 20px;
+    }
+
+    .poem {
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: center;
+      white-space: pre-wrap;
+    }
+
+    .kiss {
+      font-size: 32px;
+      text-align: center;
+      margin-top: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Floating hearts background */
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: floatUp 8s infinite ease-in;
+      opacity: 0.7;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes floatUp {
+      0% {
+        bottom: -50px;
+        transform: translateX(0) rotate(45deg);
+        opacity: 0.5;
+      }
+      100% {
+        bottom: 100%;
+        transform: translateX(80px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <!-- Add multiple hearts -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 1.5s;"></div>
+  </div>
+
+  <div class="container">
+    <h1>To My Love, On Your Birthday 🌹</h1>
+    <div class="poem">
+Another year, my love, you shine,  
+A soul so sweet, a heart divine.  
+With every smile, you light my way,  
+A brighter sun, a warmer day.  
+
+You’re laughter in my quiet night,  
+The peaceful hug that feels so right.  
+In you, I found both fire and calm,  
+My wildest storm, my softest balm.  
+
+Today’s your day, so let it bloom,  
+Like roses dancing in perfume.  
+May joy embrace your every hour,  
+For you, my love, deserve a shower—  
+
+Of kisses soft, of skies so clear,  
+Of all the love I hold so dear.  
+I’m lucky, blessed—this much is true,  
+Because my world begins with you.  
+
+So blow the candles, make your wish,  
+I’ll seal it with a birthday kiss.
+    </div>
+    <div class="kiss">💋</div>
+  </div>
+</body>
+</html>
